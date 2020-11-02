@@ -15,7 +15,7 @@ Example: `./migrator-linux -a YOUR_API_KEY -h https://api-trial.cognigy.ai -f EX
 
 Use --help to see all the options on the command line.
 
-| Option | Option Long Form             | Description                                                                              | Default                         |
+| Option | Option Long Form            | Description                                                                              | Default                         |
 | ------ | --------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------- |
 | -a     | --api-key <apiKey>          | change the used apiKey to connect to the target server                                   | -                               |
 | -f     | --file <file>               | the exported 3.x project                                                                 | -                               |
