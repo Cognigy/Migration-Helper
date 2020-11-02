@@ -1,5 +1,5 @@
 # Cognigy v3 to v4 Migration-Helper
-Version: 1.0.5
+Version: 1.0.6
 
 This tool helps to migrate Cognigy.AI v3 export packages to Cognigy.AI v4, taking advantage of some of the most advanced features that Cognigy.AI v4 is offering.
 
@@ -23,7 +23,8 @@ Use --help to see all the options on the command line.
 | -s     | --snapshot <snapname>       | the name of the snapshot to create                                                       | -                               |
 | -n     | --projectname <name>        | the name of the project to create                                                        | -                               |
 | -l     | --projectlocale <name>      | the name of the locale to use                                                            | -                               |
-| -t     | --targetProject <projectId> | the id of the target project                                                             | -                               |
+| -id    | --targetProject <projectId> | the id of the target project                                                             | -                               |
+| -t     | --trainFlows                | start training of flows after creation                                                   | false                           |
 | -r     | --removeproject             | remove project after migration                                                           | false                           |
 | -sc    | --softconvert               | convert Say Node webchat & facebook tab content into default, but keep default if exists | false                           |
 | -fc    | --forceconvert              | convert webchat & facebook data into default, overwrite default if exists                | false                           |
@@ -51,3 +52,10 @@ Example: `./migrator-linux -a YOUR_API_KEY -h https://api-trial.cognigy.ai -f EX
 - Migrated project
 - Creates, packages and downloads snapshot 'snap1'
 - Removes project from host afterwards
+
+## Release Notes
+
+### 1.0.6
+
+- Added ability to train Flows after creation by using `-t`
+- Renamed option to set target project IDs from `-t` to `-id`
