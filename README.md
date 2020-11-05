@@ -11,6 +11,8 @@ It is a command line interface (CLI) tool, available for the following platforms
 
 Example: `./migrator-linux -a YOUR_API_KEY -h https://api-trial.cognigy.ai -f EXPORT.ZIP`
 
+>Please see "Limitations" below to see what can be auto-migrated and what can't.
+
 ## Options
 
 Use --help to see all the options on the command line.
@@ -52,6 +54,25 @@ Example: `./migrator-linux -a YOUR_API_KEY -h https://api-trial.cognigy.ai -f EX
 - Migrated project
 - Creates, packages and downloads snapshot 'snap1'
 - Removes project from host afterwards
+
+## Limitations
+
+The Migration Helper can migrate the following resources:
+
+- Flows
+- Flow Nodes (except for Custom Modules)
+- Flow Intents
+- Lexicons
+- Playbooks
+- NLU Connectors
+- Processes (will be converted to Flows)
+- Endpoints
+
+The following can't be migrated, as the concepts have changed in v4:
+
+- Custom Modules (are now Extensions and must be re-built)
+- Connections (were a different type of connection in v3)
+- Secrets (are now Connections in v4)
 
 ## Release Notes
 
