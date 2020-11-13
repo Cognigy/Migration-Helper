@@ -76,6 +76,10 @@ The following can't be migrated, as the concepts have changed in v4:
 
 ## Release Notes
 
+### 1.0.7
+
+- Adds ability to convert switchFlow Nodes to Goto Nodes with injected Text and Data
+
 ### 1.0.6
 
 - Added ability to train Flows after creation by using `-t`
