@@ -1,5 +1,8 @@
 # Cognigy v3 to v4 Migration-Helper
-Version: 1.0.6
+Version: 1.0.7
+
+**Minimum Cognigy.AI Target Version: 4.1**
+(User 1.0.6 for Cognigy.AI 4.0.3)
 
 This tool helps to migrate Cognigy.AI v3 export packages to Cognigy.AI v4, taking advantage of some of the most advanced features that Cognigy.AI v4 is offering.
 
